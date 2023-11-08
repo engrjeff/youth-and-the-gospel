@@ -13,7 +13,7 @@ function FacebookChatPlugin() {
       chatbox.setAttribute("attribution", "biz_inbox");`}
       </Script>
 
-      <Script id='fb-customer-chat-func-script'>
+      <Script id='fb-customer-chat-func-script' strategy='lazyOnload'>
         {`window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
