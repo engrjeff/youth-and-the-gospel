@@ -45,7 +45,7 @@ function Header() {
             href={site.registrationLink}
             target='_blank'
             rel='noopener noreferrer'
-            className='bg-amber-500 text-gray-900 px-2 py-2 text-xs font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
+            className='bg-amber-500 text-gray-900 px-3 py-2 text-sm font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
           >
             Register
           </a>
