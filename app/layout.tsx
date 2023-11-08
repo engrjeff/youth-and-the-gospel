@@ -1,3 +1,6 @@
+import FacebookChatPlugin from "@/components/FacebookChatPlugin";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
@@ -36,7 +39,10 @@ export default function RootLayout({
       <body
         className={`${sans.className} bg-zinc-900 text-white relative min-h-screen scroll-smooth`}
       >
-        {children}
+        <Header />
+        <main className='relative'>{children}</main>
+        <Footer />
+        <FacebookChatPlugin />
       </body>
     </html>
   );

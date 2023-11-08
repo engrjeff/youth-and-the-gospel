@@ -23,9 +23,9 @@ function Header() {
   return (
     <header
       className={cn(
-        "border-b border-zinc-800 z-20 h-16 w-full bg-transparent transition-transform",
+        "border-b border-zinc-800 z-20 h-16 w-full fixed top-0 bg-transparent transition-transform",
         {
-          "fixed -top-20 translate-y-20 bg-zinc-900/70 backdrop-blur-lg border-transparent":
+          "fixed -top-20 translate-y-20 bg-zinc-900/70 backdrop-blur-lg":
             !onTop,
         }
       )}
@@ -45,7 +45,7 @@ function Header() {
             href={site.registrationLink}
             target='_blank'
             rel='noopener noreferrer'
-            className='bg-amber-500 text-gray-900 px-2 py-2 text-xs font-semibold rounded-md hover:bg-amber-600 transition-colors text-center'
+            className='bg-amber-500 text-gray-900 px-2 py-2 text-xs font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
           >
             Register
           </a>
