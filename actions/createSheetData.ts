@@ -1,8 +1,12 @@
 "use server";
 
-import { addToSheet, getYouthGatheringFormResponses } from "@/services/gform";
+import { addToSheet, getSheetRowCount } from "@/services/gform";
+import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { v4 as uuid } from "uuid";
+
+const YG_ID_COOKIE_KEY = "yg-id";
+const YG_NAME_COOKIE_KEY = "yg-name";
 
 export const createSheetData = async (formData: FormData) => {
   const firstName = formData.get("firstName");
@@ -57,7 +61,7 @@ export const createSheetData = async (formData: FormData) => {
 
   // await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  const currentResponses = await getYouthGatheringFormResponses();
+  const rowCount = await getSheetRowCount();
 
   const result = await addToSheet(values);
 
@@ -70,10 +74,10 @@ export const createSheetData = async (formData: FormData) => {
   url.searchParams.append("name", name);
   url.searchParams.append("nickname", nickname as string);
   url.searchParams.append("invitedBy", invitedBy as string);
-  url.searchParams.append(
-    "stubNo",
-    String(currentResponses?.length)?.padStart(3, "0")
-  );
+  url.searchParams.append("stubNo", String(rowCount)?.padStart(3, "0"));
+
+  cookies().set(YG_ID_COOKIE_KEY, id);
+  cookies().set(YG_NAME_COOKIE_KEY, name);
 
   redirect(url.toString());
 };

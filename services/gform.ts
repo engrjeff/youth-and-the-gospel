@@ -73,3 +73,18 @@ export const addToSheet = async (values: any) => {
 
   return result.data;
 };
+
+export const getSheetRowCount = async () => {
+  const res = await gform.forms.get({ formId: ygFormId });
+
+  const form = res.data;
+
+  const linkedSheetId = form.linkedSheetId!;
+
+  const result = await gsheet.spreadsheets.values.get({
+    spreadsheetId: linkedSheetId,
+    range: "Form Responses 1",
+  });
+
+  return result.data.values?.length || 0;
+};
