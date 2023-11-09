@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 
 const sans = Montserrat({ subsets: ["latin"] });
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${sans.className} bg-zinc-900 text-white relative min-h-screen scroll-smooth`}
       >
+        <NextTopLoader color='#f59e0b' showSpinner={false} />
         <Header />
         <main className='relative'>{children}</main>
         <Footer />
