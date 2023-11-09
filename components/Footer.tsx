@@ -15,10 +15,10 @@ function Footer() {
               height={48}
             />
             <p>
-              <span className='italic'>
+              <span className='italic text-amber-500 font-bold'>
                 &quot;The Youth and the Gospel&quot;{" "}
               </span>
-              is a ministry of Abundant Grace City Church International
+              <br /> is a ministry of Abundant Grace City Church International
               Ministries
             </p>
             <p>
@@ -28,7 +28,13 @@ function Footer() {
             </p>
 
             <p>
-              Phone: <a href='mailto:+639623797084'>+63 962-379-7084</a>
+              Phone:{" "}
+              <a
+                href='tel:+639623797084'
+                className='hover:underline hover:text-amber-500'
+              >
+                +63 962-379-7084
+              </a>
             </p>
           </div>
 
