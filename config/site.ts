@@ -18,7 +18,7 @@ export const content = {
 
 export const faq = [
   {
-    question: "Is it fee?",
+    question: "Is it free?",
     answer: "Yes! It is absolutely free.",
   },
   {
@@ -37,6 +37,11 @@ export const faq = [
   {
     question: "I want to come but I do not have any money. What should I do?",
     answer:
-      "Just send a message to the one who invited and we will make a way for you to be able to attend the event.",
+      "Just send a message to the one who invited you and we will make a way for you to be able to attend the event.",
+  },
+  {
+    question: "How can I contact you?",
+    answer:
+      "You can either send us a messeage in Facebook or using the chat at the bottom right corner of this page. You may also contact us via the phone number in the footer section.",
   },
 ];
