@@ -23,7 +23,7 @@ function Header() {
   return (
     <header
       className={cn(
-        "border-b border-zinc-800 z-20 h-16 w-full fixed top-0 bg-transparent transition-transform",
+        "border-b border-zinc-800 z-20 h-16 w-full fixed top-0 bg-transparent transition-transform duration-500",
         {
           "fixed -top-20 translate-y-20 bg-zinc-900/70 backdrop-blur-lg":
             !onTop,
