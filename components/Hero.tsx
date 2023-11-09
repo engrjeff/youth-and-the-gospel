@@ -1,4 +1,5 @@
 import { site } from "@/config/site";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -17,14 +18,12 @@ function Hero() {
           <p className='font-medium italic'>You are invited!</p>
         </div>
         <div className='flex items-center flex-col lg:flex-row justify-center gap-6 my-6'>
-          <a
-            href={site.registrationLink}
-            target='_blank'
-            rel='noopener noreferrer'
+          <Link
+            href='/register'
             className='rounded-full bg-amber-500 text-gray-900 px-6 py-4 font-semibold hover:bg-amber-600 transition-colors w-48 text-center'
           >
             Register Now
-          </a>
+          </Link>
           <a
             href={site.linkToMap}
             target='_blank'

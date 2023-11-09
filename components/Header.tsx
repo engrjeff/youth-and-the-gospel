@@ -1,6 +1,5 @@
 "use client";
 
-import { site } from "@/config/site";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +22,7 @@ function Header() {
   return (
     <header
       className={cn(
-        "border-b border-zinc-800 z-20 h-16 w-full fixed top-0 bg-transparent transition-transform duration-500",
+        "border-b border-zinc-800 z-[999] h-16 w-full fixed top-0 bg-transparent transition-transform duration-500",
         {
           "fixed -top-20 translate-y-20 bg-zinc-900/70 backdrop-blur-lg":
             !onTop,
@@ -41,14 +40,12 @@ function Header() {
           <span className='font-bold ml-3 lg:text-lg'>Grace City Church</span>
         </Link>
         <div className='ml-auto'>
-          <a
-            href={site.registrationLink}
-            target='_blank'
-            rel='noopener noreferrer'
+          <Link
+            href='/register'
             className='bg-amber-500 text-gray-900 px-3 py-2 text-sm font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
           >
             Register
-          </a>
+          </Link>
         </div>
       </div>
     </header>

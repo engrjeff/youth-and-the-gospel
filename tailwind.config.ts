@@ -11,8 +11,10 @@ const config: Config = {
       container: {
         center: true,
       },
+      colors: {
+        primary: "#f59e0b",
+      },
     },
   },
-  plugins: [],
 };
 export default config;

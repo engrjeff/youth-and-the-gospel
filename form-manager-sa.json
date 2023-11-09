@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "form-manager-404512",
+  "private_key_id": "eab404dea4691ccbe002ce5f70e9992c9a5f0b0c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC2lbyL3Cd08iiL\nwULLf5kYqi7RC7aDewabTbUTpIQwSM4/6zD2mjHOhwSVf8eSXY7rTCRxlLSkLifB\n4/dAXosNDjMVVFstCxapXPxj9nRtBHcz3gXLoBrspmNn9L+NB3svnvz3iI66u0E9\n5WjQsKNWM97ZSIH0znmsxVKSm+Nzwz+jFyMUBagP1gyFu2tXGp/GVKVan/U8xLl3\nC4azGS6xXj/dpUzMZ5woXFdYWHDyy8Lr/seZsIUpAbsqZ9HeufKUzGmdpcCPfcZO\ncEJ5WxQDhGmFbJ0bE3XDhfYiPP+aMwM2Fh/cN7OThFOdiEi2by6VZJunrP6+os/X\nTfRculVVAgMBAAECggEAWSzT3DlH2iHFtNBMt8hXtUi1OetvFlNZfDOdS30wBMci\nWOydSuwvhE/EaOHyTqW8Pma/a+v1uDREvbmCEqG6Z0N2pqW/LEY8qLZeHNKLtY0X\nTTFUgkntrIRti6Hphk9PlogfxCQhlckMSddIdJi5BcqqvlPgCPlpSv1K4Ykas3gl\nOt7bjfyXx5A4+hwd1jwDS3Dojnkclv4quBm0I8P19mQiMCJbUJ/XcanGknBfJo2e\n55Y9UwlrFPKqY8QGcl1s25w9AZw1x6SAtuwf1FpSi/sGcm6zk/T73yVIjRnkJrx0\nr7uKQy3EiU2kVHyjpV7ZYf05OVAC8iS9gyhC4d6uhwKBgQD5fBPOR/5IRml6x8EC\n9XLrMmkTGWOVjrvkXiuz2Fx4S7Iyag/LsX81pdqOSmAU9YTRjbynj5mOXyJWdg76\nhJtTnTD5+yP4YZmw6Z7iKfGy9XNL5YEi33PsCQktmVhbYzD06OoiUs07td287PEb\nup9xN501EFTtBAfPMJn5qJyL0wKBgQC7WmcU0r7vbnC0Mb0YsRtxQY1tp0ueAJ9c\n2+Um/gn6Z36tDAXtRsp4yfVPDaJ7PuO3sJpwO13eRKVi1mgbgsQOJDLUt5d1ArI3\nzBqOBKuXIEwlBedPfKtfSmuCpnUuWWLTp9Be6cUiaXXN9UXEreRof4dyshhT/4J6\n1OBoPc6pNwKBgQCDOiiQ0H2INsE0u+1iSQjxfcqXKTugZzudm4sRRjUdcXOB4Rf9\n5Jcs+NhFEAoJ/Dqonw0kdfwnTxMYt3CZhTbOfFhOpTL+axgUXk4cWEOyBjlnKokK\nds7a0MXrHkXDjCEsMXc2JqedSMQho+AO3dMQEli2mKiTIxOYf8/96hqt0QKBgQCX\n1JiLKIsx0GensFNViln5+6zYu2YtgsWjZFUdt2xwsKTZKlA3TVJSdyDE0wDlLj8v\nIwDViVb2BN2e7rDp8pxd9Xn4J1ynp+q0C0VN6H0CeVsb+d/N6/OZwt7Dv5BhYnET\npADamkp3K84bffTvghkDkq47BhdvIzcjwhamg8hSGwKBgQChAzbd+wz5K7yLs8pO\nYmjuwWUHByWZKKqc37luAbhDjsy5BZ2aIubXgrh5iMhdN/POQ82wBRyD3frFWVGq\n+oOXhx6+ZVZUtB72zUr2eeATNmil40ucLAzaqXpclMNY+EoGBTd1QrcbcdD30q1T\ndOeRS8adiTTS800K6boxCQ/HtA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "gcc-form-manager@form-manager-404512.iam.gserviceaccount.com",
+  "client_id": "110156270778391624770",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gcc-form-manager%40form-manager-404512.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

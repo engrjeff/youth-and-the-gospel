@@ -2,6 +2,7 @@ import FAQSection from "@/components/FAQSection";
 import Hero from "@/components/Hero";
 import Video from "@/components/Video";
 import { content, site } from "@/config/site";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -44,14 +45,12 @@ export default function Home() {
         </p>
 
         <div className='flex justify-center my-8'>
-          <a
-            href={site.registrationLink}
-            target='_blank'
-            rel='noopener noreferrer'
+          <Link
+            href='/register'
             className='bg-amber-500 inline-block text-gray-900 px-6 py-4 font-semibold rounded-full hover:bg-amber-600 transition-colors w-48 text-center'
           >
             Alright, I&apos;m in!
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -65,14 +64,12 @@ export default function Home() {
             <span className='font-bold'>November 27, 2023, 9:00 AM</span>
           </p>
           <div className='flex justify-center my-8'>
-            <a
-              href={site.registrationLink}
-              target='_blank'
-              rel='noopener noreferrer'
+            <Link
+              href='/register'
               className='bg-amber-500 inline-block text-gray-900 px-6 py-4 font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
             >
               Yes! I will be there!
-            </a>
+            </Link>
           </div>
 
           <h2 className='text-center text-4xl font-extrabold mb-6 uppercase pt-6'>

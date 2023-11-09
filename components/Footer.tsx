@@ -45,13 +45,7 @@ function Footer() {
                 <Link href='/'>Home</Link>
               </li>
               <li>
-                <a
-                  href={site.registrationLink}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Register
-                </a>
+                <Link href='/register'>Register</Link>
               </li>
               <li>
                 <a
