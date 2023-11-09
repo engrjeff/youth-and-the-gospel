@@ -81,7 +81,7 @@ function Stub() {
           className='bg-black p-6 rounded shadow-lg flex gap-5 w-[736px] h-[280px]'
         >
           <div
-            className='flex gap-8 pr-5 border-r border-zinc-800'
+            className='flex gap-8 pr-5 justify-between border-r border-zinc-800 text-xs'
             style={{ textOrientation: "sideways", writingMode: "vertical-lr" }}
           >
             <span>
@@ -94,7 +94,7 @@ function Stub() {
           <div className='flex flex-col flex-1 flex-shrink-0'>
             <div className='flex justify-between'>
               <div>
-                <p className='font-extrabold text-2xl mb-1 flex items-center gap-3'>
+                <p className='font-extrabold text-3xl mb-1 flex items-center gap-3'>
                   <img
                     src='/gcc-logo-no-bg.png'
                     alt='Grace City Church'
@@ -103,7 +103,7 @@ function Stub() {
                   />
                   The Youth And
                 </p>
-                <p className='font-extrabold text-2xl bg-white text-black px-4 py-1 mb-2'>
+                <p className='font-extrabold text-3xl bg-white text-black px-4 py-1 mb-2'>
                   The Gospel 2023
                 </p>
                 <small className='uppercase text-xs tracking-wide'>
@@ -143,7 +143,7 @@ function Stub() {
               </div>
             </div>
           </div>
-          <div className='border-2 border-dashed border-zinc-700 h-[220px]'></div>
+          <div className='border-r-2 border-dashed border-zinc-700 h-[240px]'></div>
           <div className='space-y-3 ml-auto'>
             <div>
               <small className='uppercase text-xs tracking-wide leading-none block mb-1'>
@@ -165,7 +165,7 @@ function Stub() {
             </div>
           </div>
           <div
-            className='flex gap-8'
+            className='flex gap-8 justify-between text-xs'
             style={{ textOrientation: "sideways", writingMode: "vertical-lr" }}
           >
             <span>
