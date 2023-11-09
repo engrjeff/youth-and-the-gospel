@@ -10,7 +10,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className='border-b border-zinc-900'>
       <div
         onClick={() => setShown((val) => !val)}
-        className='px-3 rounded py-4 flex items-center justify-between w-full hover:bg-zinc-900 font-semibold'
+        className='px-3 cursor-pointer rounded py-4 flex items-center justify-between w-full hover:bg-zinc-900 font-semibold'
       >
         <span className='flex-1 line-clamp-1'>{question}</span>
         <svg
@@ -31,7 +31,12 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           />
         </svg>
       </div>
-      <div className={cn("px-3 py-4", shown ? "block" : "hidden")}>
+      <div
+        className={cn(
+          "px-3 py-4 border border-zinc-800 border-dashed rounded-md my-4",
+          shown ? "block" : "hidden"
+        )}
+      >
         <p>{answer}</p>
       </div>
     </div>
