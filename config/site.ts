@@ -45,3 +45,9 @@ export const faq = [
       "You can either send us a messeage in Facebook or using the chat at the bottom right corner of this page. You may also contact us via the phone number in the footer section.",
   },
 ];
+
+export const YG_ID_COOKIE_KEY = "yg-id";
+export const YG_NAME_COOKIE_KEY = "yg-name";
+export const YG_NICKNAME_COOKIE_KEY = "yg-nickname";
+export const YG_STUBNO_COOKIE_KEY = "yg-stubno";
+export const YG_INVITEDBY_COOKIE_KEY = "yg-invited-by";

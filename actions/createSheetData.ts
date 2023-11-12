@@ -1,12 +1,16 @@
 "use server";
 
+import {
+  YG_ID_COOKIE_KEY,
+  YG_INVITEDBY_COOKIE_KEY,
+  YG_NAME_COOKIE_KEY,
+  YG_NICKNAME_COOKIE_KEY,
+  YG_STUBNO_COOKIE_KEY,
+} from "@/config/site";
 import { addToSheet, getSheetRowCount } from "@/services/gform";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { v4 as uuid } from "uuid";
-
-const YG_ID_COOKIE_KEY = "yg-id";
-const YG_NAME_COOKIE_KEY = "yg-name";
 
 export const createSheetData = async (formData: FormData) => {
   const firstName = formData.get("firstName");
@@ -69,15 +73,19 @@ export const createSheetData = async (formData: FormData) => {
   const url = new URL("/stub", process.env.SITE_URL);
 
   const name = `${firstName} ${lastName}`;
+  const stubNo = String(rowCount)?.padStart(3, "0");
 
   url.searchParams.append("id", id);
   url.searchParams.append("name", name);
   url.searchParams.append("nickname", nickname as string);
   url.searchParams.append("invitedBy", invitedBy as string);
-  url.searchParams.append("stubNo", String(rowCount)?.padStart(3, "0"));
+  url.searchParams.append("stubNo", stubNo);
 
   cookies().set(YG_ID_COOKIE_KEY, id);
   cookies().set(YG_NAME_COOKIE_KEY, name);
+  cookies().set(YG_NICKNAME_COOKIE_KEY, nickname as string);
+  cookies().set(YG_INVITEDBY_COOKIE_KEY, invitedBy as string);
+  cookies().set(YG_STUBNO_COOKIE_KEY, stubNo);
 
   redirect(url.toString());
 };
