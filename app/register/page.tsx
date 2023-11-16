@@ -1,3 +1,4 @@
+import MustOpenInChromeDialog from "@/components/MustOpenInChromeDialog";
 import RegisterForm from "@/components/RegisterForm";
 import {
   YG_ID_COOKIE_KEY,
@@ -25,6 +26,7 @@ function RegisterPage() {
 
   return (
     <div className='mt-20 min-h-[50vh] container px-4 max-w-screen-md lg:py-20 my-20'>
+      <MustOpenInChromeDialog />
       <Image
         src='/yg-reg-banner.png'
         alt='Youth and the Gospel registration banner'
