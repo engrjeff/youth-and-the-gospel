@@ -42,7 +42,7 @@ function Header() {
         <div className='ml-auto'>
           <Link
             href='/register'
-            className='bg-amber-500 text-gray-900 px-3 py-2 text-sm font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
+            className='bg-amber-500 text-gray-900 hidden px-3 py-2 text-sm font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
           >
             Register
           </Link>

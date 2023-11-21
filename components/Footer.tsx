@@ -45,7 +45,12 @@ function Footer() {
                 <Link href='/'>Home</Link>
               </li>
               <li>
-                <Link href='/register'>Register</Link>
+                <Link
+                  href='/register'
+                  className='pointer-events-none opacity-40 cursor-not-allowed'
+                >
+                  Register
+                </Link>
               </li>
               <li>
                 <a

@@ -1,5 +1,6 @@
 import { site } from "@/config/site";
 import Link from "next/link";
+import RegistrationClosedCallout from "./RegistrationClosedCallout";
 
 function Hero() {
   return (
@@ -17,7 +18,8 @@ function Hero() {
           <p>November 27, 2023 | Monday</p>
           <p className='font-medium italic'>You are invited!</p>
         </div>
-        <div className='flex items-center flex-col lg:flex-row justify-center gap-6 my-6'>
+        <RegistrationClosedCallout />
+        <div className='hidden items-center flex-col lg:flex-row justify-center gap-6 my-6'>
           <Link
             href='/register'
             className='rounded-full bg-amber-500 text-gray-900 px-6 py-4 font-semibold hover:bg-amber-600 transition-colors w-48 text-center'

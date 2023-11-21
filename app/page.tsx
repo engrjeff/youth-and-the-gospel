@@ -43,8 +43,7 @@ export default function Home() {
         <p className='text-center text-lg'>
           All you have to do is attend, listen, and see your life changed!
         </p>
-
-        <div className='flex justify-center my-8'>
+        <div className='hidden justify-center my-8'>
           <Link
             href='/register'
             className='bg-amber-500 inline-block text-gray-900 px-6 py-4 font-semibold rounded-full hover:bg-amber-600 transition-colors w-48 text-center'
@@ -66,7 +65,7 @@ export default function Home() {
           <div className='flex justify-center my-8'>
             <Link
               href='/register'
-              className='bg-amber-500 inline-block text-gray-900 px-6 py-4 font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
+              className='bg-amber-500 hidden text-gray-900 px-6 py-4 font-semibold rounded-full hover:bg-amber-600 transition-colors text-center'
             >
               Yes! I will be there!
             </Link>
